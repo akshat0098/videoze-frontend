@@ -84,18 +84,18 @@
               <Link to="/contact" className="block text-gray-800">
                 Contact Us
               </Link>
-              <Link
-                to="https://app.videoze.com/sign-up"
+              <a
+                href="https://app.videoze.com/sign-up"
                 className="block bg-gradient-to-r from-indigo-600 to-purple-500 text-white px-4 py-2 rounded-full text-sm font-semibold text-center"
               >
                 SignUp
-              </Link>
-              <Link
-                to="https://app.videoze.com/sign-in"
+              </a>
+              <a
+                href="https://app.videoze.com/sign-in"
                 className="block border border-indigo-400 text-indigo-600 px-4 py-2 rounded-full text-sm font-semibold text-center"
               >
                 Login
-              </Link>
+              </a>
             </div>
           )}
         </nav>
