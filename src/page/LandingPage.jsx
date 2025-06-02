@@ -1,14 +1,12 @@
 import React from "react";
-import Navbar from "../Component/Navbar";
 import Hero from "../Component/Hero";
-import Action from "../Component/Action";
 import FeaturesSection from "../Component/FeaturesSection";
 import SmartDiscovery from "../Component/SmartDiscovery";
 import HowItWorks from "../Component/HowItWorks";
 import PricingPlans from "../Component/PricingPlans";
 import Testimonials from "../Component/Testimonials";
 import FAQ from "../Component/FAQ";
-import Footer from "../Component/Footer";
+import Action from "../Component/Action";
 
 const LandingPage = () => {
   return (
