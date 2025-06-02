@@ -9,7 +9,7 @@ const ContactUs = () => {
    <>
     <ContactHero />
     <GetInTouch/>
-    <ContactFaq />
+    {/* <ContactFaq /> */}
     <ContactSocial />
 
   </>

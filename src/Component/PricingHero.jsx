@@ -17,7 +17,7 @@ const PricingHero = () => {
    
      {/* Content */}
      <div className="relative z-10 text-center w-full max-w-5xl mx-auto">
-       <h1 className="text-2xl sm:text-3xl md:text-6xl font-bold text-black">
+       <h1 className="text-2xl sm:text-3xl md:text-6xl font-bold text-black mb-2">
         Find the perfect plan that suits your content goals.
        </h1>
        <p className="text-sm sm:text-base md:text-lg text-gray-700 px-2 sm:px-4">

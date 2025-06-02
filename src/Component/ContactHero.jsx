@@ -1,6 +1,6 @@
 import React from "react";
 import backgroundImage from "../assets/BackgroundImg.jpg";
-import { FaRobot } from "react-icons/fa";
+import { HelpCircle, Mail, Files } from "lucide-react";
 
 const cards = [
   {
@@ -8,17 +8,20 @@ const cards = [
     subtitle: "Frequently Asked Questions",
     description:
       "Browse queries related to our platform, pricing, or affiliate program.",
+    icon: HelpCircle,
   },
   {
     title: "Email Support",
     subtitle: "Write to Us",
     description: "support@videoze.com",
+    icon: Mail,
   },
   {
     title: "Learn with Videos",
     subtitle: "Tutorial Library",
     description:
       "Watch quick tutorials from dashboard to learn our platform easily.",
+    icon: Files,
   },
 ];
 
@@ -53,30 +56,33 @@ const ContactHero = () => {
 
       {/* Cards Section */}
       <div className="relative z-10 flex flex-col md:flex-row items-center justify-center gap-4 mt-6 w-full max-w-6xl">
-        {cards.map((card, index) => (
-          <div
-            key={index}
-            className="bg-white p-4 rounded-xl shadow-md w-full max-w-xs flex justify-between items-start hover:shadow-lg transition-shadow duration-300 min-h-[160px]"
-          >
-            {/* Text Content */}
-            <div className="text-left">
-              <p className="text-xs font-medium text-purple-500 mb-1">
-                {card.subtitle}
-              </p>
-              <h3 className="text-base font-semibold text-gray-900 mb-1">
-                {card.title}
-              </h3>
-              <p className="text-gray-600 text-sm">{card.description}</p>
-            </div>
+        {cards.map((card, index) => {
+          const Icon = card.icon;
+          return (
+            <div
+              key={index}
+              className="bg-white p-4 rounded-xl shadow-md w-full max-w-xs flex justify-between items-start hover:shadow-lg transition-shadow duration-300 min-h-[160px]"
+            >
+              {/* Text Content */}
+              <div className="text-left">
+                <p className="text-xs font-medium text-purple-500 mb-1">
+                  {card.subtitle}
+                </p>
+                <h3 className="text-base font-semibold text-gray-900 mb-1">
+                  {card.title}
+                </h3>
+                <p className="text-gray-600 text-sm">{card.description}</p>
+              </div>
 
-            {/* Icon on Right */}
-            <div className="ml-3 mt-1">
-              <div className="bg-green-100 p-2 rounded-full">
-                <FaRobot className="text-green-500 text-lg" />
+              {/* Icon on Right */}
+              <div className="ml-3 mt-1">
+                <div className="bg-green-100 p-2 rounded-full">
+                  <Icon className="text-green-500 w-5 h-5" />
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </div>
   );

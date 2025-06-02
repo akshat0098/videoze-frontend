@@ -40,7 +40,7 @@ const FaqSection = () => {
   const [openIndex, setOpenIndex] = useState(0); // first one open by default
 
   return (
-    <section className="py-12 px-4 sm:px-6 md:px-8 max-w-[85rem] mx-auto text-center">
+    <section className="py-12 px-4 sm:px-6 md:px-8 max-w-[85rem] mx-auto text-center mb-">
       <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2">
         Frequently Asked Questions
       </h2>

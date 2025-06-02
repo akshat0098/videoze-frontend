@@ -39,7 +39,7 @@ const GetInTouch = () => {
                 ))}
               </ul>
             </div>
-            <p className="text-xs text-center mt-6 sm:mt-8">
+            <p className="text-xl text-center mt-6 sm:mt-8">
               Connect with our team for any assistance
             </p>
           </div>
@@ -128,7 +128,7 @@ const GetInTouch = () => {
               <h3 className="text-xl sm:text-2xl font-bold mb-2">
                 Need to Talk? Let's Chat!
               </h3>
-              <p className="text-sm text-gray-600 mb-3">
+              <p className="text-2xl text-gray-600 mb-3">
                 Don't want to type? We're just a message away.
               </p>
               <ul className="text-sm text-gray-700 space-y-0">
@@ -143,7 +143,7 @@ const GetInTouch = () => {
                     "linear-gradient(84.88deg, #413FC2 18.63%, #C668FD 81.37%)",
                 }}
               >
-                Start Chat
+                Comming Soon
               </button>
             </div>
             <img src={Robo} alt="Support Bot" className="w-48 h-auto" />

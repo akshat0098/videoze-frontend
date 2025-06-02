@@ -1,6 +1,6 @@
 const ReadyToStartSection = () => {
   return (
-    <section className="bg-gradient-to-r from-[#f3f0ff] to-[#fdf6ff] rounded-xl md:rounded-2xl py-8 px-6 md:py-12 md:px-12 text-center w-full max-w-[87rem] mx-auto mt-5 mb-16 md:mb-28">
+    <section className="bg-gradient-to-r from-[#f3f0ff] to-[#fdf6ff] rounded-xl md:rounded-2xl py-8 px-6 md:py-12 md:px-12 text-center w-full max-w-[87rem] mx-auto mt-5 md:mb-28">
       <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 md:mb-6 max-w-7xl mx-auto">
         Ready to Start Earning?
       </h2>

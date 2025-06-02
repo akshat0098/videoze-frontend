@@ -13,8 +13,9 @@ const Affiliates = () => {
       <EarningsEstimator />
       <AffiliateWork />
       <WhyPartner />
-      <FaqSection />
       <ReadyToStartSection />
+      <FaqSection />
+      
     </>
   )
 }

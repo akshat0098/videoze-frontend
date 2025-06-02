@@ -102,7 +102,7 @@ const PricingTable = () => {
   ];
 
   const gradientBg = {
-    background: "linear-gradient( #C668FD 0%, #6E8EFB 100%)",
+    background: "linear-gradient( #C668FD 40%, #AE66FD 80%)",
   };
 
   const renderCheck = () => (

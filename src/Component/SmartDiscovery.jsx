@@ -1,5 +1,6 @@
 import React from "react";
 import { Star } from "lucide-react";
+import smartDis from "../assets/smartDis.png";
 import articleImg from "../assets/smartdis1.png";
 import stockMediaImg from "../assets/smartdis2.png";
 import facelessImg from "../assets/faceless.png";
@@ -23,43 +24,39 @@ const SmartDiscovery = () => {
           </p>
         </div>
 
-        {/* Smart Discovery Main Card */}
+        {/* Smart Discovery Section */}
         <div className="w-full bg-gradient-to-br from-[#f3e8ff] to-[#dbeafe] rounded-2xl p-8 shadow-sm mb-10">
           <div className="flex flex-col md:flex-row gap-8 items-center">
-            {/* Image Container - EXACTLY matching Go Faceless dimensions */}
-            <div
-              className="bg-gray-100 rounded-xl flex items-center justify-center"
-              style={{
-                width: "450px",
-                height: "300px",
-                flexShrink: 0,
-              }}
-            >
-              <img
-              className="rounded-xl"
-                src={facelessImg}
-                alt="Story Discovery Preview"
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  objectFit: "contain",
-                  display: "block",
-                  margin: "auto",
-                }}
-              />
+            {/* Image - now on the left side */}
+            <div className="w-full md:w-2/5 flex justify-center">
+              <div className="relative w-full h-0 pb-[66.66%]">
+                {/* 3:2 aspect ratio container */}
+                <div className="absolute inset-0 bg-gray-100 rounded-xl overflow-hidden">
+                  <img
+                    src={smartDis}
+                    alt="Smart Discovery Preview"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
             </div>
 
-            {/* Text Content - identical to Go Faceless */}
-            <div className="w-full">
-              <h3 className="text-3xl md:text-4xl font-bold mb-6">
-                Bring Your Story to Life with Smart Discovery
+            {/* Text Content - now on the right side */}
+            <div className="w-full md:w-3/5">
+              <h3 className="text-4xl font-bold mb-6 text-center md:text-left">
+                Optimize Your Videos for Search
               </h3>
+              <p className="text-gray-600 text-lg mb-6">
+                Our AI-powered keyword discovery tool helps you find the perfect
+                keywords to maximize your video's visibility on search engines
+                and social platforms.
+              </p>
               <ul className="space-y-4 text-lg text-gray-800">
                 {[
-                  "Discover trending content, creators, and topics tailored to you",
-                  "Get instant suggestions to boost engagement and reach",
-                  "Save time with intelligent recommendations",
-                  "Great for educators, marketers, influencers, and creators",
+                  "Trending topic analysis to find the best keywords",
+                  "Competitor keyword research to stay ahead",
+                  "SEO-optimized titles and descriptions for better rankings",
+                  "Performance tracking to refine your strategy",
                 ].map((text, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <Star
@@ -81,7 +78,6 @@ const SmartDiscovery = () => {
             </div>
           </div>
         </div>
-
         {/* Two Side-by-Side Cards */}
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           {/* Article to Video */}
@@ -95,16 +91,16 @@ const SmartDiscovery = () => {
                 video with just one click. Our AI extracts the key points and
                 creates a compelling narrative.
               </p>
-              <div className="w-full h-auto aspect-video bg-gray-100 rounded-xl overflow-hidden flex items-center justify-center">
+              <div className="w-full aspect-video bg-gray-100 rounded-xl overflow-hidden p-0 m-0">
                 <img
                   src={articleImg}
-                  alt="Article to Video Preview"
-                  className="w-full h-full object-cover"
+                  alt="Preview"
+                  className="w-90% h-90% object-cover"
                 />
               </div>
             </div>
             <a href="#" className={`${commonButtonClass} mt-8`}>
-              Explore
+              Create
               <span className="w-6 h-6 bg-white text-[#6B3EFF] rounded-full flex items-center justify-center text-lg">
                 ➔
               </span>
@@ -122,11 +118,11 @@ const SmartDiscovery = () => {
                 tracks and sound effects to enhance your videos professionally
                 without additional licensing fees.
               </p>
-              <div className="w-full h-auto aspect-video bg-gray-100 rounded-xl overflow-hidden flex items-center justify-center">
+             <div className="w-full aspect-video bg-gray-100 rounded-xl overflow-hidden p-0 m-0">
                 <img
                   src={stockMediaImg}
-                  alt="Stock Media Preview"
-                  className="w-full h-full object-cover"
+                  alt="Preview"
+                  className="w-90% h-90% object-cover"
                 />
               </div>
             </div>

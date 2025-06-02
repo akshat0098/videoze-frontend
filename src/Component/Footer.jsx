@@ -6,8 +6,8 @@ import {
   FaYoutube,
   FaTwitter,
 } from "react-icons/fa";
-import Videoze from "../assets/Videoze.png";
 import { Link } from "react-router-dom";
+import videoLogo from "../assets/videoLogo.png"; 
 
 const Footer = () => {
   return (
@@ -32,12 +32,12 @@ const Footer = () => {
             <div className="flex flex-col items-start space-y-5">
               <Link to="/" className="flex items-center space-x-2 mb-2">
                 <img
-                  src={Videoze}
+                  src={videoLogo}
                   alt="Logo"
-                  className="h-8 w-auto object-contain"
+                  className="h-10 w-auto object-contain"
                 />
               </Link>
-              <p className="text-sm leading-relaxed">
+              <p className="text-xl leading-relaxed">
                 Videoze is a leading AI services provider, offering custom
                 software development and innovative AI integration to enhance
                 efficiency, scalability, and user experiences across diverse
@@ -85,7 +85,7 @@ const Footer = () => {
 
           {/* Bottom Links aligned to the right */}
           <div className="flex-1 md:flex md:justify-end">
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-25 text-sm text-gray-800">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-25 text-xl text-gray-800">
               <div>
                 <h4 className="font-semibold mb-3 text-gray-900">Company</h4>
                 <ul className="space-y-2">

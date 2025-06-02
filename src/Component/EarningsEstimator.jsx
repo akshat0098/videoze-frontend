@@ -22,7 +22,7 @@ const EarningsEstimator = () => {
       {/* Estimator + CTA */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch mb-10">
         {/* Estimator Box */}
-        <div className="md:col-span-2 bg-white rounded-xl shadow-md p-4 sm:p-6 text-left">
+        <div className="md:col-span-2 bg-gray-100 rounded-xl shadow-lg p-4 sm:p-6 text-left">
           {/* Headings Row */}
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b pb-4 mb-6 gap-2">
             <h3 className="text-sm sm:text-base text-gray-600 font-semibold">
@@ -49,11 +49,10 @@ const EarningsEstimator = () => {
                       max={100}
                       value={referrals}
                       onChange={(e) => setReferrals(Number(e.target.value))}
-                      className="w-full accent-purple-500"
+                      className="w-full"
                       style={{
-                        height: "6px",
-                        borderRadius: "999px",
-                        background: `linear-gradient(to right, #413FC2 0%, #413FC2 ${referrals}%, #C668FD ${referrals}%, #C668FD 100%)`,
+                        background: `linear-gradient(to right, #413FC2 0%, #C668FD ${referrals}%, white ${referrals}%, white 100%)`,
+                        borderRadius: "9999px",
                       }}
                     />
                   </div>
@@ -80,16 +79,13 @@ const EarningsEstimator = () => {
                     <input
                       type="range"
                       min={0}
-                      max={500}
+                      max={100}
                       value={planValue}
                       onChange={(e) => setPlanValue(Number(e.target.value))}
-                      className="w-full accent-purple-500"
+                      className="w-full"
                       style={{
-                        height: "6px",
-                        borderRadius: "999px",
-                        background: `linear-gradient(to right, #413FC2 0%, #413FC2 ${
-                          (planValue / 500) * 100
-                        }%, #C668FD ${(planValue / 500) * 100}%, #C668FD 100%)`,
+                        background: `linear-gradient(to right, #413FC2 0%, #C668FD ${planValue}%, white ${planValue}%, white 100%)`,
+                        borderRadius: "9999px",
                       }}
                     />
                   </div>
@@ -104,12 +100,26 @@ const EarningsEstimator = () => {
                     />
                   </div>
                 </div>
+
+                {/* Plan Value Checkboxes */}
+                <div className="flex flex-wrap gap-4 mt-4">
+                  {[15, 30, 45, 60, 75, 90].map((val) => (
+                    <label key={val} className="flex items-center space-x-2">
+                      <input
+                        type="checkbox"
+                        checked={planValue === val}
+                        onChange={() => setPlanValue(val)}
+                      />
+                      <span>${val}</span>
+                    </label>
+                  ))}
+                </div>
               </div>
             </div>
 
             {/* Estimated Income Display */}
-            <div className="w-full sm:w-40 flex flex-col items-end sm:items-end justify-center">
-              <div className="text-2xl sm:text-3xl font-bold text-black">
+            <div className="w-full sm:w-40 flex flex-col justify-center self-center items-end">
+              <div className="text-3xl sm:text-4xl font-bold text-black">
                 ${estimatedIncome.toLocaleString()}
               </div>
               <p className="text-xs text-gray-500 mt-1 text-right">

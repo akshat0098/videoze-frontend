@@ -1,34 +1,38 @@
-import React from 'react';
-import screenshot from '../assets/howItWork.png';
+import React from "react";
+import screenshot from "../assets/howItWork.png";
 
 const categories = [
   "AI Image to Video",
   "Stock Footage Video",
   "Blog to Video",
   "Ecom URL to Video",
-  "Avatar Video"
+  "Avatar Video",
 ];
 
 const steps = [
   {
     number: 1,
     title: "Discover",
-    description: "Find trending topics and real questions your audience is asking.",
+    description:
+      "Find trending topics and real questions your audience is asking.",
   },
   {
     number: 2,
     title: "Generate",
-    description: "Turn prompts into AI-powered videos with avatars and voiceovers.",
+    description:
+      "Turn prompts into AI-powered videos with avatars and voiceovers.",
   },
   {
     number: 3,
     title: "Customize",
-    description: "Add visuals, music, and branding to make your video stand out and match your style.",
+    description:
+      "Add visuals, music, and branding to make your video stand out and match your style.",
   },
   {
     number: 4,
     title: "Schedule",
-    description: "Plan and publish your videos at the best times across all platforms effortlessly.",
+    description:
+      "Plan and publish your videos at the best times across all platforms effortlessly.",
   },
 ];
 
@@ -41,27 +45,26 @@ const HowItWorks = () => {
           How it works?
         </h1>
         <p className="mt-2 text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
-          Create impactful videos in 4 simple steps — from idea to shareable content using AI.
+          Create impactful videos in 4 simple steps — from idea to shareable
+          content using AI.
         </p>
       </div>
 
       {/* Video Categories */}
       <div className="flex flex-wrap justify-center gap-3 mb-16">
         {categories.map((item) => (
-          // <span
-          <a
+          <button
             key={item}
-            className="px-5 py-2 rounded-full text-sm font-medium border"
+            className="px-5 py-2 rounded-full text-sm font-medium border border-gray-300  text-purple-700 
+                 transition-colors duration-200 
+                 hover:bg-gradient-to-r hover:from-purple-300 hover:to-indigo-300 hover:text-black hover:border-indigo-500"
             style={{
               background:
                 "linear-gradient(84.88deg, rgba(65, 63, 194, 0.08) 18.63%, rgba(198, 104, 253, 0.08) 81.37%)",
-              color: "#333",
-              borderColor: "#ccc",
             }}
           >
             {item}
-          {/* </span> */}
-          </a>
+          </button>
         ))}
       </div>
 
