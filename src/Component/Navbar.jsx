@@ -44,13 +44,13 @@
 
             <div className="hidden md:flex items-center space-x-4">
               <Link
-                to="#"
+                to="https://app.videoze.com/sign-up"
                 className="bg-gradient-to-r from-indigo-600 to-purple-500 text-white px-5 py-2 rounded-full text-sm font-semibold hover:opacity-90 transition"
               >
                 SignUp
               </Link>
               <Link
-                to="#"
+                to="https://app.videoze.com/sign-up"
                 className="border border-indigo-400 text-indigo-600 px-5 py-2 rounded-full text-sm font-semibold hover:bg-indigo-50 transition"
               >
                 Login
@@ -84,18 +84,18 @@
               <Link to="/contact" className="block text-gray-800">
                 Contact Us
               </Link>
-              <a
-                href="https://app.videoze.com/sign-up"
+              <Link
+                to="https://app.videoze.com/sign-up"
                 className="block bg-gradient-to-r from-indigo-600 to-purple-500 text-white px-4 py-2 rounded-full text-sm font-semibold text-center"
               >
                 SignUp
-              </a>
-              <a
-                href="https://app.videoze.com/sign-in"
+              </Link>
+              <Link
+                to="https://app.videoze.com/sign-in"
                 className="block border border-indigo-400 text-indigo-600 px-4 py-2 rounded-full text-sm font-semibold text-center"
               >
                 Login
-              </a>
+              </Link>
             </div>
           )}
         </nav>
