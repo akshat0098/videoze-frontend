@@ -50,7 +50,7 @@
                 SignUp
               </Link>
               <Link
-                to="https://app.videoze.com/sign-up"
+                to="https://app.videoze.com/sign-in"
                 className="border border-indigo-400 text-indigo-600 px-5 py-2 rounded-full text-sm font-semibold hover:bg-indigo-50 transition"
               >
                 Login
